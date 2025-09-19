@@ -95,7 +95,7 @@ The following sections will provide a deeper breakdown of each customer segment 
 Below is the overview visualization of each cluster performance: 
 
 <br>
-<img width="1189" height="989" alt="image" src="https://github.com/user-attachments/assets/04d7462e-9232-4da9-b387-5171b1f6d71f" />
+<img width="1189" height="989" alt="overview cluster performance" src=".\img\Clusters_performance_overview.png" />
 
 <h1> 4. Insights Deep Dive & Recommendations </h1>
 <h3> Data Cleaning & EDA </h3>
@@ -111,7 +111,7 @@ StockCodes are usually five-digit numbers (like product IDs), and some valid one
 
 <h3> Customer Outliers Detection </h3>
 
-<img width="1489" height="490" alt="image" src="https://github.com/user-attachments/assets/f0a6671b-ee0f-49da-91e0-9e153f556d2a" />
+<img width="1489" height="490" alt="image" src=".\img\Boxplot_outliers_detection.png" />
 Outliers in Monetary Value and Frequency are visually evident in boxplots, where a small subset of customers exhibit extremely high spend and purchase frequency, compressing the bulk of the data near the lower end. 
 
 These outliers are not discarded, as they represent high-value, highly engaged customers of the client business. Therefore, another separate analysis was conducted to analyze top-tier customers behaviors without distorting the clustering of the broader population.
@@ -122,10 +122,10 @@ These outliers are not discarded, as they represent high-value, highly engaged c
 
 Four distinct customer segments were identified within the non-outlier population using KMeans clustering on RFM metrics  (Recency vs Frequency vs Monetary). By plotting the clusters in a 3D scatterplot, a clear separation between behavioral groups was visualized, each representing a unique stage in the customer lifecycle.
 
-<img width="794" height="812" alt="image" src="https://github.com/user-attachments/assets/4f4cd814-65e7-4b30-aee8-a7f6522fbb39" />
+<img width="794" height="812" alt="image" src= .\img\Clusters_non_outlier.png />
 
 To further understand the distribution and variability within each segment, violin plots were created for each dimension. 
-<img width="1189" height="1790" alt="image" src="https://github.com/user-attachments/assets/3f93ce0d-3061-48c9-87c9-b7b90de8f846" />
+<img width="1189" height="1790" alt="image" src=.\img\Clusters_non_outlier_violins.png />
 
 This revealed:
 <ul>
@@ -148,10 +148,10 @@ This analysis allows us to tailor strategies for each group, as shared below
 Outlier customers were identified as those with exceptionally high spend or purchase frequency, far beyond the typical range. While they represent a small portion of the customer base, their behavior is critical to understand because they contribute disproportionately to revenue and may require specialized engagement.
 
 To explore these customers, the same clustering approach was used as with core segments, but focused only on the outlier group. To visualize their behavior, 3D chart was created (Recency, Frequency, Monetary), which revealed distinct patterns, some were frequent buyers with moderate spend, while others made fewer purchases but spent large amounts.
-<img width="793" height="812" alt="image" src="https://github.com/user-attachments/assets/51c9d379-669d-4a20-917f-6f24ee68915c" />
+<img width="793" height="812" alt="image" src=".\img\Clusters_outlier.png" />
 
 Then, violin plots were used to examine each cluster’s spread:
-<img width="1189" height="1790" alt="image" src="https://github.com/user-attachments/assets/e748bd99-6363-4499-909d-ace759e0e615" />
+<img width="1189" height="1790" alt="image" src=".\img\Clusters_outlier_violins.png" />
 
 These visualizations help generate more thoughtful strategies for high-impact customers, as shared below:
   
