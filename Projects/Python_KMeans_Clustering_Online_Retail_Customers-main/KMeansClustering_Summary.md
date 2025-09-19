@@ -100,6 +100,7 @@ Below is the overview visualization of each cluster performance:
 <h1> 4. Insights Deep Dive & Recommendations </h1>
 <h3> Data Cleaning & EDA </h3>
 Before conducting segmentation, I applied rigorous data cleaning to ensure analytical integrity and removed <strong>~23%</strong> of records from the original dataset due to
+
 -  Null Customer IDs, which prevent linkage to individual profiles.
 -  Irrelevant StockCodes, identified through pattern mismatches and business logic.
 
