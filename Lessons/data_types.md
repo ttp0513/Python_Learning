@@ -81,3 +81,5 @@ Iterables are data types that can be iterated, or looped through, allowing you t
 - `Tuples`
 - `Fronzenset`
 
+### Difference between mutable and immutable data types
+Mutable data types can be modified after their creation, while immutable data type cannot be changed without being overwritten
