@@ -60,9 +60,9 @@ message[::-1] # 'SJ dna nohtyP evol I'
 | `str.lower()`       | Converts all characters to lowercase                         | `'HELLO'.lower()`                             | `'hello'`                        |
 | `str.title()`       | Capitalizes first letter of each word                        | `'hello world'.title()`                       | `'Hello World'`                  |
 | `str.capitalize()`  | Capitalizes first character only                             | `'python'.capitalize()`                       | `'Python'`                       |
-| `str.strip()`       | Removes leading/trailing whitespace                          | `'  hello  '.strip()`                         | `'hello'`                        |
-| `str.lstrip()`      | Removes leading whitespace                                   | `'  hello'.lstrip()`                          | `'hello'`                        |
-| `str.rstrip()`      | Removes trailing whitespace                                  | `'hello  '.rstrip()`                          | `'hello'`                        |
+| `str.strip('x')`       | Removes leading/trailing whitespace(default) or specified string `x`                          | `'  hello  '.strip()`                         | `'hello'`                        |
+| `str.lstrip('x')`      | Removes leading whitespace or specified string `x `                                 | `'  hello'.lstrip()`                          | `'hello'`                        |
+| `str.rstrip('x')`      | Removes trailing whitespace or specified string `x `                                | `'hello  '.rstrip()`                          | `'hello'`                        |
 | `str.replace(a, b)` | Replaces substring `a` with `b`                              | `'hello world'.replace('world', 'Python')`    | `'hello Python'`                |
 | `str.split(sep)`    | Splits string into list by separator `sep`                  | `'a,b,c'.split(',')`                          | `['a', 'b', 'c']`                |
 | `delimiter.join(list)`    | Joins list into string with separator                        | `'-'.join(['a', 'b', 'c'])`                   | `'a-b-c'`                        |
