@@ -85,7 +85,7 @@ Magic commands that start with `%` only work in **IPython or Jupyter notebooks/C
 ```py
 x = 42
 y = "hello"
-z = [1, 2, 3
+z = [1, 2, 3]
 %who
 # x  y  z - variable names
 %whos
